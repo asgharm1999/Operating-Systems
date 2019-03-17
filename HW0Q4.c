@@ -22,9 +22,9 @@
 
 int fibonacci(int number);
 
-int sum; /* this data is shared by the thread(s) */
+int sum; // this data is shared by the threads
 
-void *runner(void * param); /* the thread */
+void *runner(void * param); // the thread 
 
 int main(int argc, char *argv[]) {
 
