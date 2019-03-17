@@ -1,0 +1,28 @@
+1. Run Terminal on Linux or get WSL from Windows Store and download Ubuntu
+2. Install gcc
+3. Navigate to the directory of downloaded files (if using WSL note: you must start command with /mnt/c/Users/... where c is the drive name)
+
+These are the following commands for the problems:
+
+Q1: 
+
+gcc HW0Q1.c -o HW0Q1
+./HW0Q1 64
+
+Q2:
+
+gcc HW0Q2.c -o HW0Q2
+./HW0Q2 64
+
+Q3:
+
+gcc HW0Q3.c -o HW0Q3 -lpthread
+./HW0Q3 90 81 78 95 79 72 85 
+
+Q4:
+
+gcc HW0Q4.c -o HW0Q4 -lpthread
+./HW0Q4 5
+
+Feel free to change the numbers after the ./HW0Qx and play around with it
+
