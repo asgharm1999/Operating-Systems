@@ -21,9 +21,9 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-void *avg_func(void *str);
-void *min_func(void *ptr);
-void *max_func(void *ptr);
+void avg_func(void *str);
+void min_func(void *ptr);
+void max_func(void *ptr);
 double avg;
 int min;
 int max;
@@ -97,7 +97,7 @@ int main(int argc, char *argv[]) {
     exit(EXIT_SUCCESS);
 }
 
-void *avg_func(void *ptr) {
+void avg_func(void *ptr) {
     datastruct *copy;
     copy = (datastruct *)ptr;
     int sz = copy->size;
@@ -107,10 +107,10 @@ void *avg_func(void *ptr) {
         avg += (copy->values[i]);
     } // If I used double for avg it would have given 82.8571 which doesn't match the example output
 
-    avg = (int)(avg / sz); // Used cast to match example output given on instructions.
+    avg = (int)(avg / sz); // Used cast to match example output given on instructions
 }
 
-void *min_func(void *ptr) {
+void min_func(void *ptr) {
     datastruct *copy;
     copy = (datastruct *)ptr;
 
@@ -126,7 +126,7 @@ void *min_func(void *ptr) {
     }
 }
 
-void *max_func(void *ptr) {
+void max_func(void *ptr) {
 
     datastruct *copy;
     copy = (datastruct *)ptr;
