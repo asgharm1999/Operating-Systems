@@ -4,6 +4,8 @@
 
 These are the following commands for the problems:
 
+HW0
+
 Q1: 
 
 gcc HW0Q1.c -o HW0Q1
@@ -25,4 +27,20 @@ gcc HW0Q4.c -o HW0Q4 -lpthread
 ./HW0Q4 5
 
 Feel free to change the numbers after the ./HW0Qx and play around with it
+
+----------------------------------------------------------------------------------------------------------
+
+HW1
+
+Q1:
+
+gcc HW1Q1.c -o HW1Q1
+./HW1Q1 692
+
+For this problem, the number after ./HW1Q1 is a value from 0 - 4999 in which you want the head to start
+
+Q2: 
+
+gcc HW1Q2.c -o HW1Q2 -lpthread
+./HW1Q2
 
